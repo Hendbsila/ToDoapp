@@ -1,0 +1,8 @@
+<form #f="ngForm" (ngSubmit)="addTask(f.value)" class="form">
+    <button  id="addbutton" type="submit" class="btn  mb-2">ADD</button>
+
+    <label class=" form-inline form-control-lg" for="title">
+        <input ngModel name="title" class="col-10" type="text" value="title" placeholder="Add new task" >
+    </label>
+
+</form>

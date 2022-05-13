@@ -1,0 +1,23 @@
+h3{
+    display: block;
+    color: cadetblue;
+    text-align: center;
+    font-size: xx-large;
+}
+#buttonadd{
+    border-color: cadetblue;
+    color: cadetblue;
+    align-content: center;
+    
+   
+}
+#buttonadd:hover{
+    color: white;
+    background-color: cadetblue;
+    box-shadow: cadetblue;
+    
+}
+#datespan{
+    display: block;
+    float: right;
+}

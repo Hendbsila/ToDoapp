@@ -1,0 +1,14 @@
+#addbutton{
+    display: block;
+    background-color: cadetblue;
+    border-color: cadetblue;
+    color: white;
+    width: 100px;
+    align-items: center;
+    
+}
+#addbutton:hover{
+    color: cadetblue;
+    background-color: white;
+
+}

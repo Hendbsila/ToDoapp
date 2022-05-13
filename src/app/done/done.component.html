@@ -1,0 +1,18 @@
+<div class="container">
+  <br>
+    <h3>Done Tasks</h3>
+    <br>
+    <ol *ngFor="let t of filtredTab">
+       
+            <li class="list-group-item"><label >
+                <input class="form-check-input me-1" type="checkbox" [checked]="t.statut">   
+              </label>
+              <span>{{t.title}}</span>
+              <hr>
+              <span>{{t.date | date:'short'}}</span>
+            </li>
+        
+        
+    </ol>
+</div>
+
