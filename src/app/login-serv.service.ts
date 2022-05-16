@@ -12,4 +12,7 @@ export class LoginServService {
   seConnecter(identifiant){
      return this.http.get(this.link);
   }
+  Addnewuser(identifiants){
+    return this.http.post(this.link,identifiants)
+  }
 }

@@ -1,0 +1,10 @@
+.btn{
+    background-color: cadetblue;
+    border-color: cadetblue;
+    display: block;
+    float: right;
+}
+.btn:hover{
+    color: cadetblue;
+    background-color: white;
+}

@@ -6,3 +6,11 @@
     color: cadetblue;
     background-color: white;
 }
+#registerbtn{
+    color: cadetblue;
+    background-color: white;
+}
+#registerbtn:hover{
+    color: white;
+    background-color: cadetblue;
+}

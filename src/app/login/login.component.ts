@@ -9,7 +9,7 @@ import { LoginServService } from '../login-serv.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+test=false;
   constructor(
     private http:HttpClient,
     private logServ:LoginServService,
@@ -30,11 +30,19 @@ export class LoginComponent implements OnInit {
           }
           usersList.forEach(elt => {
           if((elt.email==identifiants.email) && (elt.passeword==identifiants.passeword))
-          {
+          {this.test=true;
           localStorage.setItem('authentification', response['connected']);
-          this.router.navigateByUrl('') }
-        else alert("Email et mot de passe invalides")
-      });
+          this.router.navigateByUrl('')
+         }
+        });
+        if (this.test==false){
+          alert('Please check your email and passeword');
+          
+
+        }
+
+        
+      
          
 
         },

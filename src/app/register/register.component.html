@@ -1,0 +1,25 @@
+<form #f="ngForm" (ngSubmit)="AddUser(f.value)">
+
+    <div class="divider d-flex align-items-center my-4">
+
+    </div>
+
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+        <input #email="ngModel" ngModel type="email" name="email" id="email"
+            class="form-control form-control-lg" placeholder="Enter a valid email address" />
+        <label class="form-label" for="log">Email address</label>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-3">
+        <input #passeword="ngModel" ngModel type="passeword" name="passeword" id="form3Example4"
+            class="form-control form-control-lg" placeholder="Enter password" />
+        <label class="form-label" for="pasw">Password</label>
+    </div>
+    <div>
+        <button  class="btn btn-primary btn-lg"
+                            style="padding-left: 2.5rem; padding-right: 2.5rem;">Confirm</button>
+                    
+    </div>
+</form>

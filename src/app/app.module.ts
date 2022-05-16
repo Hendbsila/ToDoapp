@@ -11,6 +11,8 @@ import { AddtaskComponent } from './addtask/addtask.component';
 import { ORANGE_ROUTTING } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { RegisterComponent } from './register/register.component';
 const firebaseConfig = {
   apiKey: "AIzaSyCY6nUiGG3gBPO65_b1kCHDar7n6fxf7sA",
   authDomain: "todoapp-c9edb.firebaseapp.com",
@@ -27,7 +29,9 @@ const firebaseConfig = {
     DoneComponent,
     LoginComponent,
     NavbarComponent,
-    AddtaskComponent
+    AddtaskComponent,
+    NotfoundComponent,
+    RegisterComponent
     
   ],
   imports: [

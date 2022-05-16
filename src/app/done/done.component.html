@@ -4,10 +4,11 @@
     <br>
     <ol *ngFor="let t of filtredTab">
        
-            <li class="list-group-item"><label >
-                <input class="form-check-input me-1" type="checkbox" [checked]="t.statut">   
-              </label>
-              <span>{{t.title}}</span>
+            <li class="list-group-item">
+              <div class="form-check checkbox-teal mb-2">
+                <input class="form-check-input me-1" type="checkbox" checked >
+                <label class="form-check-label" for="check" >  {{t.title| titlecase}}  </label> 
+            </div>
               <hr>
               <span>{{t.date | date:'short'}}</span>
             </li>

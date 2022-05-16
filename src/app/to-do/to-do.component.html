@@ -2,34 +2,39 @@
     <br>
     <h3>To Do Tasks</h3>
     <br>
-    
-    <div class="list-group">
-        
-            <ol *ngFor="let t of listtask" >
-                <li class="list-group-item"><label >
-                    <input (change)="changeStatut(t)" class="form-check-input me-1" type="checkbox" [checked]="t.statut" >   
-                  </label>
-                  <span [ngStyle]="{'text-decoration' :t.statut === true ? 'line-through' : 'none'}">{{t.title}}</span>
-                  <br>
-                  
-                  <hr>
-                  <span id="datespan">{{t.date | date:'short'}}</span>
-                  <span *ngIf="t.statut">DONE</span>
-                  <span *ngIf="!t.statut">TO DO</span>
-                  <br>
-                  
-                </li>
 
-            </ol>
-        
-    
+    <div class="list-group">
+
+        <ol *ngFor="let t of listtask">
+            <li class="list-group-item">
+                <div class="form-check checkbox-teal mb-2">
+                    <input type="checkbox" class="form-check-input " id="check"  (change)="changeStatut(t)"  
+                        [checked]="t.statut" >
+                    
+                    <label class="form-check-label" for="check" [ngStyle]="{'text-decoration' :t.statut === true ? 'line-through' : 'none'}">  {{t.title| titlecase}}  </label> 
+             
+                    
+                </div>
+                <br>
+
+                <hr>
+                <span id="datespan">{{t.date | date:'short'}}</span>
+                <span *ngIf="t.statut">DONE</span>
+                <span *ngIf="!t.statut">TO DO</span>
+                <br>
+
+            </li>
+
+        </ol>
+
+
     </div>
-   <br>
-   <br>
-   <hr>
+    <br>
+    <br>
+    <hr>
 </div>
 <div class="container">
-    <button  (click)="show()" id="buttonadd" type="button" class="btn btn-outline-primary btn-lg"  >Add New Task</button>
+    <button (click)="show()" id="buttonadd" type="button" class="btn btn-outline-primary btn-lg">Add New Task</button>
 
 </div>
 <br>
